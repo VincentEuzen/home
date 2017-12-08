@@ -691,6 +691,12 @@ right: 30px;
     transform-origin: bottom left;
   }
 
+
+
+
+
+// Work
+
 .work {
 width: 100%;
 }
@@ -795,7 +801,7 @@ margin: 0 auto;
 .text-box {
   font-size: 50px;
   position: absolute;
-  top: 350px; left: 50px; /* à 50%/50% du parent référent */
+  top: 300px; left: 50px; /* à 50%/50% du parent référent */
   color: white;
   transition-property: transform;
   transition-duration: 0.5s;
@@ -806,7 +812,29 @@ margin: 0 auto;
   transition-property: transform;
   transition-duration: 0.5s;
   transition-timing-function: ease; /* Transition de type ease */
-   transform: translateY(-100px); /* On déplace l'objet */
+   transform: translateY(-180px); /* On déplace l'objet */
+  animation: alternate;
+}
+
+.text-box-1-p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  position: absolute;
+  top: 500px; left: 50px; /* à 50%/50% du parent référent */
+  max-width: 60%;
+  color: white;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+  z-index: 500;
+}
+
+.text-box-hover-1-p {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+   transform: translateY(-220px); /* On déplace l'objet */
   animation: alternate;
 }
 
@@ -890,9 +918,32 @@ margin: 0 auto;
   transition-property: transform;
   transition-duration: 0.5s;
   transition-timing-function: ease; /* Transition de type ease */
-   transform: translateY(-100px); /* On déplace l'objet */
+   transform: translateY(-160px); /* On déplace l'objet */
   animation: alternate;
 }
+
+.text-box-2-p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  position: absolute;
+  top: 500px; left: 50px; /* à 50%/50% du parent référent */
+  max-width: 60%;
+  color: white;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+  z-index: 500;
+}
+
+.text-box-hover-2-p {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+   transform: translateY(-210px); /* On déplace l'objet */
+  animation: alternate;
+}
+
 
 .btn-box-2 {
   position: absolute;
@@ -994,7 +1045,29 @@ margin: 0 auto;
   transition-property: transform;
   transition-duration: 0.5s;
   transition-timing-function: ease; /* Transition de type ease */
-   transform: translateY(-100px); /* On déplace l'objet */
+   transform: translateY(-200px); /* On déplace l'objet */
+  animation: alternate;
+}
+
+.text-box-3-p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  position: absolute;
+  top: 500px; left: 50px; /* à 50%/50% du parent référent */
+  max-width: 60%;
+  color: white;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+  z-index: 500;
+}
+
+.text-box-hover-3-p {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+   transform: translateY(-200px); /* On déplace l'objet */
   animation: alternate;
 }
 
@@ -1078,11 +1151,31 @@ margin: 0 auto;
   transition-property: transform;
   transition-duration: 0.5s;
   transition-timing-function: ease; /* Transition de type ease */
-   transform: translateY(-100px); /* On déplace l'objet */
+   transform: translateY(-220px); /* On déplace l'objet */
   animation: alternate;
 }
 
+.text-box-4-p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  position: absolute;
+  top: 500px; left: 50px; /* à 50%/50% du parent référent */
+  max-width: 60%;
+  color: white;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+  z-index: 500;
+}
 
+.text-box-hover-4-p {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+   transform: translateY(-220px); /* On déplace l'objet */
+  animation: alternate;
+}
 
 .btn-box-4 {
   position: absolute;
