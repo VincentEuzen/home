@@ -9,12 +9,18 @@ body {
   position : fixed;
 z-index: 9999;
 background-color: white;
-background : url('../images/45.gif') 50% 50% no-repeat;
+/*background : url('../images/45.gif') 50% 50% no-repeat;*/
 top : 0px;
 left : 0px;
 height : 100%;
 width : 100%;
 cursor : wait;
+}
+
+.loader img {
+  position: absolute;
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 
 .all-screen-top {
