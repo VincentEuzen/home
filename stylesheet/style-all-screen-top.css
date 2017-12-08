@@ -1,0 +1,409 @@
+@import url(style-all-screen-middle.css);
+
+body {
+  background-color: #EBECE6;
+  position: relative;
+}
+
+.all-screen-top {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cercle-middle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  z-index: 50;
+  position: absolute;
+  top: 35%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease; /* Transition de type ease */
+  transform: translateX(-100px); /* On déplace l'objet */
+  animation: alternate;
+}
+
+/*.cercle-middle:hover {
+
+  background-color: white;
+
+}*/
+
+.cercle-when-clicked {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  z-index: 50;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease; /* Transition de type ease */
+  transform: translateX(400px); /* On déplace l'objet */
+  animation: alternate;
+}
+
+.cercle-when-clicked-return {
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease; /* Transition de type ease */
+  transform: translateX(-400px); /* On déplace l'objet */
+  animation: alternate;
+}
+
+
+.cercle-middle:hover~.left {
+  background-color: #FC614D;
+}
+
+.cercle-middle:hover~.square-all a {
+  color: #FC614D;
+}
+
+.square-all:hover~.left {
+  color: #FC614D;
+}
+
+
+
+.cercle-middle-fin {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  border: 1px solid white;
+  opacity: 0.6;
+  z-index: 11;
+  position: absolute;
+  top: -13%; left: -12%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease; /* Transition de type ease */
+  transform: scale(1); /* On déplace l'objet */
+  animation: alternate;
+}
+
+.cercle-middle-fin-extend {
+  position: absolute;
+  top: 0%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease; /* Transition de type ease */
+  transform: scale(5); /* On déplace l'objet */
+  animation: alternate;
+}
+
+#semi-cercle {
+  position: relative;
+}
+
+#img-semi-cercle {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 260px;
+  height: 260px;
+  z-index: 10;
+  transform-origin: center;
+}
+
+.img-semi-cercle-extend {
+  position: absolute;
+  top: 0%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease; /* Transition de type ease */
+  transform: scale(5); /* On déplace l'objet */
+  transform: rotate(360deg);
+  animation: alternate;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background-color: #749FBB;
+  position: relative;
+  animation: alternate;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  width: 50%;
+}
+
+.all-screen-width {
+  float: left;
+  transition-property: width;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  width: 100%;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+  position: relative;
+}
+
+.right-hidden {
+  float: right;
+  transition-property: width;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  width: 0%;
+}
+
+.image-right-1 {
+  position: absolute;
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  width: 160%;
+  height: auto;
+  z-index: 2;
+  min-height: 110%;
+  min-width: 110%;
+}
+
+.image-right-1-hidden {
+  display: none;
+}
+
+
+.image-right-2 {
+  position: absolute;
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  z-index: 1;
+  width: auto;
+  height: 170%;
+}
+
+.image-right-2-hidden {
+  display: none;
+}
+
+.texte {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 30px;
+}
+
+h2 {
+  font-size: 4vw;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 1024px) {
+      .image-right-2 {
+  position: absolute;
+  top: 50%; left: 30%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  z-index: 1;
+  height: 130%;
+  width: auto;
+
+}
+    }
+
+
+@media screen and (max-width: 768px) {
+      .cercle-middle {
+        display: none;
+      }
+    }
+
+@media screen and (max-width: 768px) {
+      h2 {
+        font-size: 40px;
+      }
+    }
+
+@media screen and (max-width: 768px) {
+      .cercle-middle-fin {
+        display: none;
+      }
+    }
+
+
+@media screen and (max-width: 768px) {
+      .square-all {
+        display: none;
+      }
+    }
+
+@media screen and (max-width: 768px) {
+      .hidden-menu i {
+        display: show;
+      }
+    }
+
+@media screen and (max-width: 768px) {
+      .right {
+        display: none;
+      }
+    }
+
+@media screen and (max-width:768px) { /* phone < 640px */
+ div.left, div.right {
+  float:none;
+  clear:both;
+  width:100%;
+ }
+}
+
+
+
+
+.test-texte {
+  position: relative;
+  text-align: center;
+}
+
+
+
+.square-all a {
+  font-size: 20px;
+  color: #749FBB;
+  position: absolute;
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  z-index: 5;
+
+  text-decoration: none;
+}
+
+#grid-size {
+width: 60px;
+height: 60px;
+}
+
+.square-all:hover {
+color: #FC614D;
+}
+
+#no-decoration-bouton {
+  text-decoration: none;
+}
+
+#explore {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  transform: translateY(-50%);
+  padding-bottom: 25px;
+}
+
+
+.all-screen-top .left #explore a {
+  font-size: 15px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  color: white;
+}
+
+.all-screen-top .left #explore i {
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+#explore #fleche {
+  position: absolute;
+  bottom: 0px;
+  right: 14px;
+}
+
+.hidden-for-js {
+  display: none;
+  z-index: 2000;
+}
+
+.show {
+  display: show; /* P.S: Use `!important` if missing `#content` (selector specificity). */
+  z-index: 2000;
+}
+
+
+#hidden-text-menu a {
+  text-decoration: none;
+  line-height: 1;
+  z-index: 2000;
+}
+
+.style-menu {
+  font-size: 40px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  color: white;
+  z-index: 50;
+  text-decoration: none;
+}
+
+.style-menu:hover {
+  font-size: 42px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  /*color: #FC614D;*/
+  z-index: 50;
+}
+
+/*.underline:hover {
+  border-bottom: 2px solid currentColor;
+  display: inline-block;
+  line-height: 0.85;
+  font-size: 60px;
+  justify-content: right;
+}*/
+
+#menu-home {
+  position: absolute;
+  top: 28%; left: 76%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+#menu-about {
+  position: absolute;
+  top: 42%; left: 71%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+#menu-realisations {
+  position: absolute;
+  top: 56%; left: 69%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+#menu-references {
+  position: absolute;
+  top: 70%; left: 75%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+.hidden-menu i {
+  color: black;
+  z-index: 1000;
+  font-size: 50px;
+  position: absolute;
+  display: none;
+}
+
