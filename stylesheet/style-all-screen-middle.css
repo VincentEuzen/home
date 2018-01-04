@@ -85,7 +85,7 @@
   position: relative;
 }
 
-.right-introduction h1 {
+.right-introduction h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 30px;
@@ -97,7 +97,7 @@
 
 }
 
-.right-introduction h2 {
+.right-introduction h3 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: lighter;
   font-size: 40px;
@@ -142,7 +142,7 @@
 
 
 
-.introduction h3 {
+.introduction h4 {
   font-family: 'Francois One', sans-serif;
   font-weight: bolder;
   font-size: 600px;
@@ -181,7 +181,7 @@
   float: right;
 }
 
-.text-on-bande h1 {
+.text-on-bande h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 30px;
@@ -193,7 +193,7 @@
 
 }
 
-.text-on-bande h2 {
+.text-on-bande h3 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: lighter;
   font-size: 40px;
