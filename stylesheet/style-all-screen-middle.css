@@ -297,7 +297,7 @@
 
 
 @media screen and (max-width: 900px) {
-      .text-on-bande h1 {
+      .text-on-bande h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 25px;
@@ -312,7 +312,7 @@
 
 
    @media screen and (max-width: 900px) {
-     .text-on-bande h2 {
+     .text-on-bande h3 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: lighter;
   font-size: 30px;
@@ -338,7 +338,7 @@
     }
 
 @media screen and (max-width: 850px) {
-      .text-on-bande h1 {
+      .text-on-bande h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 25px;
@@ -353,7 +353,7 @@
 
 
    @media screen and (max-width: 850px) {
-     .text-on-bande h2 {
+     .text-on-bande h3 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: lighter;
   font-size: 30px;
@@ -379,7 +379,7 @@
     }
 
 @media screen and (max-width: 640px) {
-      .text-on-bande h1 {
+      .text-on-bande h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 22px;
@@ -394,7 +394,7 @@
 
 
    @media screen and (max-width: 640px) {
-     .text-on-bande h2 {
+     .text-on-bande h3 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: lighter;
   font-size: 26px;
@@ -471,7 +471,7 @@
 }
 
 @media screen and (max-width: 550px) {
-      .right-introduction h1 {
+      .right-introduction h2 {
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         font-size: 30px;
@@ -484,7 +484,7 @@
     }
 
 @media screen and (max-width: 550px) {
-      .right-introduction h2 {
+      .right-introduction h3 {
         font-family: 'Cormorant Garamond', serif;
         font-weight: lighter;
         font-size: 30px;
